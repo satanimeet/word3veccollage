@@ -3,7 +3,7 @@ import nltk
 nltk.download('punkt')
 nltk.download('punkt_tab')
 
-# Sample corpus: list of sentences
+# list semple
 corpus = [
     "Natural language processing enables computers to understand human language.",
     "Word embeddings are a type of word representation that allows words to be represented as vectors.",
@@ -21,7 +21,7 @@ model = Word2Vec(sentences, vector_size=100, window=5, min_count=1, workers=2, s
 # Save the model
 model.save("word2vec_sample.model")
 
-# Example usage: find most similar words
+
 target_word = "language"
 if target_word in model.wv:
     print(f"Most similar words to '{target_word}':")

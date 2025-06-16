@@ -45,7 +45,8 @@ if st.button("Train & Explore"):
     else:
         st.error(f"'{target_word}' not in vocabulary.")
 
-# Optionally, allow user to load the last trained model and query it
+# Optionally user can see last model result
+
 if os.path.exists(MODEL_PATH):
     st.markdown("---")
     st.write("Or, query the last trained model:")
